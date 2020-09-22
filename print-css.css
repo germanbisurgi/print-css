@@ -1,0 +1,83 @@
+@media only print  {
+
+    * {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        /*box-shadow:0 1px 1px red;*/
+    }
+
+    .visible-print {
+        display : block;
+    }
+
+    .hidden-print {
+        display : none;
+    }
+
+    .foodtruck .pdf-row {
+        content: " ";
+        display: table;
+        width: 100%;
+    }
+
+    .pdf-col-1  {width:  8.33%; float: left;}
+    .pdf-col-2  {width: 16.66%; float: left;}
+    .pdf-col-3  {width:    25%; float: left;}
+    .pdf-col-4  {width: 33.33%; float: left;}
+    .pdf-col-5  {width: 41.66%; float: left;}
+    .pdf-col-6  {width:    50%; float: left;}
+    .pdf-col-7  {width: 58.33%; float: left;}
+    .pdf-col-8  {width: 66.66%; float: left;}
+    .pdf-col-9  {width:    75%; float: left;}
+    .pdf-col-10 {width: 83.33%; float: left;}
+    .pdf-col-11 {width: 91.66%; float: left;}
+    .pdf-col-12 {width:   100%; float: left;}
+
+    .pdf-offset-1  {margin-left:  8.33%;}
+    .pdf-offset-2  {margin-left: 16.66%;}
+    .pdf-offset-3  {margin-left:    25%;}
+    .pdf-offset-4  {margin-left: 33.33%;}
+    .pdf-offset-5  {margin-left: 41.66%;}
+    .pdf-offset-6  {margin-left:    50%;}
+    .pdf-offset-7  {margin-left: 58.33%;}
+    .pdf-offset-8  {margin-left: 66.66%;}
+    .pdf-offset-9  {margin-left:    75%;}
+    .pdf-offset-10 {margin-left: 83.33%;}
+    .pdf-offset-11 {margin-left: 91.66%;}
+
+    .pdf-break-before {
+        page-break-before: always;
+        clear: both;
+    }
+
+    .pdf-break-after {
+        page-break-after: always;
+        clear: both;
+    }
+
+    .pdf-break-avoid * {
+        page-break-inside: avoid !important;
+    }
+}
+
+.visible-print {
+    display : none;
+}
+
+.hidden-print {
+    display : none;
+}
+
+@media print {
+    .visible-print {
+        display : block;
+    }
+}
+
+@media screen {
+    .hidden-print {
+        display : block;
+    }
+}
